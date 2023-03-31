@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Bunny"; /* Имя шрифта */
+    src: url(../fonts/bunny.otf); /* Путь к файлу со шрифтом */
+   }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+.section {
+    padding: 100px 0;
+    color: #ffffff;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_text {
+    max-width: 600px;
+}
+.section_title {
+    position: relative;
+    font-family: 'Bunny', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+.section_title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 5px;
+}
+.section_subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section_desc {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+.section_img {
+    position: relative;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+.section_img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    left: -113px;
+    width: 210px;
+    height: 210px;
+    border: 20px solid #E8C300;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}

@@ -1,0 +1,9 @@
+.about {
+    color: #000000;
+}
+.about .section_text {
+    margin-right: 80px;
+}
+.section_img::after {
+    left: 350px;
+}

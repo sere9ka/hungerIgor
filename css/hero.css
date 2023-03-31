@@ -1,0 +1,126 @@
+.hero {
+    position: relative;
+    background: grey url(../img/header-bg.png) no-repeat center / cover;
+    padding-top: 350px;
+    padding-bottom: 83px;
+    margin-top: -100px;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.hero::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+.hero_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+.hero_info {
+    transform: rotate(-90deg);
+    margin-left: -136px;
+    height: 16px;
+}
+.hero_desc_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtitle, .hero_title {
+    text-transform: uppercase;
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 25px;
+}
+.hero_title {
+    font-family: 'Bunny', sans-serif;
+    font-size: 96px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+.buttons {
+    position: relative;
+}
+.hero .buttons::before {
+    content: '';
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    margin-left: -30px;
+}
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 192px;
+    height: 63px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.button--primary {
+    background: #E8C300;
+    border-radius: 5px;
+}
+.buttons > .button--primary {
+    margin-right: 38px;
+}
+.button--secondary {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: transparent;
+}
+.button--down {
+    position: relative;
+    margin-top: 54px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF url(../img/btn-down.svg) no-repeat center;
+    border-radius: 50%;
+}
+.button--down::after {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+.social_links {
+    display: flex;
+    flex-direction: column;
+}
+.social_link {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+.social_link:last-child {
+    margin-bottom: 0;
+}

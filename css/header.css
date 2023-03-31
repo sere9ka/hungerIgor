@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    z-index: 100;
+}
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav__link {
+    width: 133px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header .logo__link {
+    position: absolute;
+    left: calc(50% - 75px);
+    top: 25px;
+}
